@@ -15,7 +15,6 @@ namespace VotingSystemApplication.Presentation_Layer
     
     public partial class frm_LogIn : Form
     {
-        readonly UserDataAccess user = new UserDataAccess();
 
         public frm_LogIn()
         {
@@ -93,13 +92,14 @@ namespace VotingSystemApplication.Presentation_Layer
             else
             {
                 //All the backend mechanism for Log In button
-                if(user.LoginUsers())
+                UserDataAccess user=new UserDataAccess();
+                if (user.LoginUsers(txt_email.Text, txt_password.Text))
                 {
-
+                    MessageBox.Show("YOO MADAFAKa!");
                 }
                 else
                 {
-
+                    MessageBox.Show("FUCK YOU MADAFAKa!");
                 }
 
 

@@ -9,22 +9,28 @@ using VotingSystemApplication.Presentation_Layer;
 
 namespace VotingSystemApplication.Data_Access_Layer
 {
-    internal class UserDataAccess:DataAccess
+    internal class UserDataAccess : DataAccess
     {
         public bool LoginUsers(string email, string password)
         {
-            string sql = "SELECT * FROM Users_Auth";
+            string sql = "SELECT * FROM UsersAuth";
             SqlDataReader reader = this.GetData(sql);
-            
+
             if (reader.Read())
             {
-                if(email==reader["useremail"] && password == reader["userpassword"])
+                User user = new User();
+                user.UserEmail = reader["useremail"].ToString();
+                user.UserPassword = reader["userpassword"].ToString();
+                if (email == user.UserEmail && password == user.UserPassword)
                 {
+                    Dispose();
                     return true;
                 }
             }
+            Dispose();
             return false;
         }
+
         //All Users Data
         public List<User> GetUsers()
         {
@@ -39,5 +45,6 @@ namespace VotingSystemApplication.Data_Access_Layer
                 users.Add(user);
             }
             return users;
+        }
     }
 }
