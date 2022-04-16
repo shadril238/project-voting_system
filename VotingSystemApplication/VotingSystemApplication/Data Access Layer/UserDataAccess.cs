@@ -8,7 +8,7 @@ using VotingSystemApplication.Entities;
 
 namespace VotingSystemApplication.Data_Access_Layer
 {
-    internal class UserDataAccess:DataAccess
+    internal class UserDataAccess : DataAccess
     {
         public List<User> GetUsers()
         {

@@ -8,13 +8,13 @@ namespace VotingSystemApplication.Entities
 {
     internal class User
     {
-        private int id;
-        private string name,email,userName,password;    
+        private int userId;
+        private string userName, userEmail, userPassword;
 
         //Properties
-        public int Id
+        public int UserId
         {
-            get { return id; }
+            get { return Userd; }
             set { id = value; }
         }
         public string Name
@@ -29,7 +29,7 @@ namespace VotingSystemApplication.Entities
         }
         public string UserName
         {
-            get { return userName; }    
+            get { return userName; }
             set { userName = value; }
         }
         public string Password
