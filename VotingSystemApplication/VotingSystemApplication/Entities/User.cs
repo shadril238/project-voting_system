@@ -14,28 +14,24 @@ namespace VotingSystemApplication.Entities
         //Properties
         public int UserId
         {
-            get { return Userd; }
-            set { id = value; }
-        }
-        public string Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
-        public string Email
-        {
-            get { return email; }
-            set { email = value; }
+            get { return this.UserId; }
+            set { this.userId = value; }
         }
         public string UserName
         {
-            get { return userName; }
-            set { userName = value; }
+            get { return this.userName; }
+            set { this.userName = value; }
         }
-        public string Password
+        public string UserEmail
         {
-            get { return password; }
-            set { password = value; }
+            get { return this.userEmail; }
+            set { this.userEmail = value; }
+        }
+        
+        public string UserPassword
+        {
+            get { return this.userPassword; }
+            set { this.userPassword = value; }
         }
 
 
