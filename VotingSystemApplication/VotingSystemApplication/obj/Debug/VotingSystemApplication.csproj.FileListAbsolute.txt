@@ -1,0 +1,5 @@
+C:\Users\SHADRIL HASSAN\Desktop\project-voting_system\VotingSystemApplication\VotingSystemApplication\obj\Debug\VotingSystemApplication.csproj.AssemblyReference.cache
+C:\Users\SHADRIL HASSAN\Desktop\project-voting_system\VotingSystemApplication\VotingSystemApplication\obj\Debug\VotingSystemApplication.csproj.SuggestedBindingRedirects.cache
+C:\Users\SHADRIL HASSAN\Desktop\project-voting_system\VotingSystemApplication\VotingSystemApplication\obj\Debug\VotingSystemApplication.Properties.Resources.resources
+C:\Users\SHADRIL HASSAN\Desktop\project-voting_system\VotingSystemApplication\VotingSystemApplication\obj\Debug\VotingSystemApplication.csproj.GenerateResource.cache
+C:\Users\SHADRIL HASSAN\Desktop\project-voting_system\VotingSystemApplication\VotingSystemApplication\obj\Debug\VotingSystemApplication.csproj.CoreCompileInputs.cache
