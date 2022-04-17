@@ -95,7 +95,11 @@ namespace VotingSystemApplication.Presentation_Layer
                 UserDataAccess user=new UserDataAccess();
                 if (user.LoginUsers(txt_email.Text, txt_password.Text))
                 {
+                    frm_UserRegistration frm = new frm_UserRegistration();
                     MessageBox.Show("YOO MADAFAKa!");
+                    this.Hide();
+                    frm.Show();
+
                 }
                 else
                 {
