@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VotingSystemApplication.Presentation_Layer;
 
 namespace VotingSystemApplication.Data_Access_Layer
 {
@@ -251,6 +252,34 @@ namespace VotingSystemApplication.Data_Access_Layer
             {
                 comboBox_bloodgroup.Text = @"Select Blood Group";
             }
+        }
+
+        //check box terms and conditions
+        private void chkBox_terms_Click(object sender, EventArgs e)
+        {
+            if (chkBox_terms.Checked)
+            {
+                btn_register.Enabled = true; //register button enabled
+            }
+            else
+            {
+                btn_register.Enabled = false;//register button disabled
+            }
+        }
+
+        private void pictureBox_backtoogin_Click(object sender, EventArgs e)
+        {
+            //messagebox :: Are you sure?
+            this.Hide();
+            frm_LogIn login = new frm_LogIn();
+            login.Show();
+        }
+
+        private void lbl_dp_Click(object sender, EventArgs e)
+        {
+            UserDataAccess user=new UserDataAccess();
+
+
         }
     }
 }

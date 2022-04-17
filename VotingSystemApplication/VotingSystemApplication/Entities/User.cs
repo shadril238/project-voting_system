@@ -9,7 +9,7 @@ namespace VotingSystemApplication.Entities
     internal class User
     {
         private int userId;
-        private string userName, userEmail, userPassword;
+        private string userName, userEmail, userPassword, userPhone, ;
 
         //Properties
         public int UserId

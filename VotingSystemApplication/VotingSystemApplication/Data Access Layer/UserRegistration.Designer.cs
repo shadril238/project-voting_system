@@ -71,6 +71,7 @@
             this.txtBox_name2 = new System.Windows.Forms.TextBox();
             this.txtBox_name1 = new System.Windows.Forms.TextBox();
             this.pictureBox_windowclosingReg = new System.Windows.Forms.PictureBox();
+            this.lbl_dp = new System.Windows.Forms.Label();
             this.pnl_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_backtoogin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_dp)).BeginInit();
@@ -96,6 +97,7 @@
             // pnl_left
             // 
             this.pnl_left.BackColor = System.Drawing.Color.RoyalBlue;
+            this.pnl_left.Controls.Add(this.lbl_dp);
             this.pnl_left.Controls.Add(this.lbl_backtologin);
             this.pnl_left.Controls.Add(this.pictureBox_backtoogin);
             this.pnl_left.Controls.Add(this.pictureBox_dp);
@@ -124,12 +126,14 @@
             this.pictureBox_backtoogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_backtoogin.TabIndex = 40;
             this.pictureBox_backtoogin.TabStop = false;
+            this.pictureBox_backtoogin.Click += new System.EventHandler(this.pictureBox_backtoogin_Click);
             // 
             // pictureBox_dp
             // 
-            this.pictureBox_dp.Location = new System.Drawing.Point(31, 111);
+            this.pictureBox_dp.Location = new System.Drawing.Point(31, 94);
             this.pictureBox_dp.Name = "pictureBox_dp";
             this.pictureBox_dp.Size = new System.Drawing.Size(199, 140);
+            this.pictureBox_dp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_dp.TabIndex = 2;
             this.pictureBox_dp.TabStop = false;
             // 
@@ -477,7 +481,7 @@
             this.chkBox_terms.AutoSize = true;
             this.chkBox_terms.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkBox_terms.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.chkBox_terms.Location = new System.Drawing.Point(413, 442);
+            this.chkBox_terms.Location = new System.Drawing.Point(417, 442);
             this.chkBox_terms.Name = "chkBox_terms";
             this.chkBox_terms.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.chkBox_terms.Size = new System.Drawing.Size(331, 30);
@@ -485,6 +489,7 @@
             this.chkBox_terms.Text = "I agree to the Privacy Policy";
             this.chkBox_terms.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.chkBox_terms.UseVisualStyleBackColor = true;
+            this.chkBox_terms.Click += new System.EventHandler(this.chkBox_terms_Click);
             // 
             // comboBox_gender
             // 
@@ -604,6 +609,18 @@
             this.pictureBox_windowclosingReg.TabStop = false;
             this.pictureBox_windowclosingReg.Click += new System.EventHandler(this.pictureBox_windowclosingReg_Click);
             // 
+            // lbl_dp
+            // 
+            this.lbl_dp.AutoSize = true;
+            this.lbl_dp.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_dp.ForeColor = System.Drawing.Color.White;
+            this.lbl_dp.Location = new System.Drawing.Point(85, 246);
+            this.lbl_dp.Name = "lbl_dp";
+            this.lbl_dp.Size = new System.Drawing.Size(91, 19);
+            this.lbl_dp.TabIndex = 44;
+            this.lbl_dp.Text = "Select File";
+            this.lbl_dp.Click += new System.EventHandler(this.lbl_dp_Click);
+            // 
             // frm_UserRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -687,5 +704,6 @@
         private System.Windows.Forms.Label lbl_backtologin;
         private System.Windows.Forms.PictureBox pictureBox_backtoogin;
         private System.Windows.Forms.PictureBox pictureBox_windowclosingReg;
+        private System.Windows.Forms.Label lbl_dp;
     }
 }

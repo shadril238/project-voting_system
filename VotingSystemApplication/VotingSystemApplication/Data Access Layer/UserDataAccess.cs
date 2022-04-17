@@ -11,6 +11,7 @@ namespace VotingSystemApplication.Data_Access_Layer
 {
     internal class UserDataAccess : DataAccess
     {
+        //user login
         public bool LoginUsers(string email, string password)
         {
             string sql = "SELECT * FROM UsersAuth";
@@ -30,6 +31,14 @@ namespace VotingSystemApplication.Data_Access_Layer
             Dispose();
             return false;
         }
+
+        //user registration
+        public bool RegisterUsers()
+        {
+
+            return true;
+        }
+
 
         //All Users Data
         public List<User> GetUsers()
