@@ -72,6 +72,7 @@
             // lbl_4
             // 
             this.lbl_4.AutoSize = true;
+            this.lbl_4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_4.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lbl_4.Location = new System.Drawing.Point(285, 458);
@@ -83,13 +84,15 @@
             // lbl_3
             // 
             this.lbl_3.AutoSize = true;
+            this.lbl_3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_3.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lbl_3.Location = new System.Drawing.Point(259, 421);
             this.lbl_3.Name = "lbl_3";
-            this.lbl_3.Size = new System.Drawing.Size(346, 23);
+            this.lbl_3.Size = new System.Drawing.Size(352, 23);
             this.lbl_3.TabIndex = 8;
-            this.lbl_3.Text = "Don\'t have account? Sign up here.";
+            this.lbl_3.Text = "Don\'t have account? Register here.";
+            this.lbl_3.Click += new System.EventHandler(this.lbl_3_Click);
             // 
             // pictureBox_passwordicon
             // 

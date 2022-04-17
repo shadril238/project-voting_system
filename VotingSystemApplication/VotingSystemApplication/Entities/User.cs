@@ -8,32 +8,24 @@ namespace VotingSystemApplication.Entities
 {
     internal class User
     {
-        private int userId;
-        private string userName, userEmail, userPassword, userPhone, ;
+        public int UserId { get; set; }
+        public string UserFirstName { get; set; }
+        public string UserLastName { get; set; }
 
-        //Properties
-        public int UserId
-        {
-            get { return this.UserId; }
-            set { this.userId = value; }
-        }
-        public string UserName
-        {
-            get { return this.userName; }
-            set { this.userName = value; }
-        }
-        public string UserEmail
-        {
-            get { return this.userEmail; }
-            set { this.userEmail = value; }
-        }
-        
-        public string UserPassword
-        {
-            get { return this.userPassword; }
-            set { this.userPassword = value; }
-        }
+        public string UserEmail { get; set; }
+        public string UserPhone { get; set; }
+        public string UserPassword { get; set; }    
 
 
+        public string UserDateOfBirth { get; set; }
+
+        public string UserGender { get; set; }
+        public string UserFatherName { get;  set; }
+        public string UserMotherName { get;  set; }
+        public string UserLocation { get; set; }
+        public string UserThana { get; set; }
+        public string UserDistrict { get; set; }
+        public string UserDivision { get; set; }
+        public string UserBloodGroup { get; set; }
     }
 }

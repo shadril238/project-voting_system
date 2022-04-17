@@ -17,28 +17,36 @@ namespace VotingSystemApplication.Data_Access_Layer
             string sql = "SELECT * FROM UsersAuth";
             SqlDataReader reader = this.GetData(sql);
 
-            if (reader.Read())
+            while (reader.Read())
             {
                 User user = new User();
                 user.UserEmail = reader["useremail"].ToString();
                 user.UserPassword = reader["userpassword"].ToString();
                 if (email == user.UserEmail && password == user.UserPassword)
                 {
-                    Dispose();
+                    //Dispose();
                     return true;
                 }
             }
-            Dispose();
+            //Dispose();
             return false;
         }
 
         //user registration
-        public bool RegisterUsers()
+        public bool InsertUserData(User user)
         {
-
-            return true;
+            string sql = "INSERT INTO Users(userfirstname, userlastname, useremail, userphone,usergender, userbloodgroup, userfathername, usermothername,userlocation, userthana, userdistrict, userdivision) VALUES ('"+user.UserFirstName+"', '"+user.UserLastName+"', '"+user.UserEmail+"' , '"+user.UserPhone+"', '"+user.UserGender+"', '"+user.UserBloodGroup + "', '"+user.UserFatherName+"' , '"+user.UserMotherName+"', '"+user.UserLocation+"', '"+user.UserThana+"', '"+user.UserDistrict+"', '"+user.UserDivision+"')";
+            int flag = this.ExecuteQuery(sql);
+            return flag > 0;
         }
 
+        public bool InsertUserPassWord(User user) {
+
+            string sql = "INSERT INTO UsersAuth(useremail, userpassword) VALUES ('"+user.UserEmail+"', '"+user.UserPassword+"')";
+            int flag = this.ExecuteQuery(sql);
+            return flag > 0;
+        }
+        
 
         //All Users Data
         public List<User> GetUsers()

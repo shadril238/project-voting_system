@@ -91,23 +91,25 @@ namespace VotingSystemApplication.Presentation_Layer
             }
             else
             {
-                //All the backend mechanism for Log In button
+                //All the backend mechanism for Register button
                 UserDataAccess user=new UserDataAccess();
                 if (user.LoginUsers(txt_email.Text, txt_password.Text))
                 {
-                    frm_UserRegistration frm = new frm_UserRegistration();
-                    MessageBox.Show("YOO MADAFAKa!");
-                    this.Hide();
-                    frm.Show();
-
+                    MessageBox.Show("Dashboard Pending!");
                 }
                 else
                 {
-                    MessageBox.Show("FUCK YOU MADAFAKa!");
+                    MessageBox.Show("Log In failed!");
                 }
-
-
             }
+        }
+
+        // Redirect to Register form
+        private void lbl_3_Click(object sender, EventArgs e)
+        {
+            frm_UserRegistration frm = new frm_UserRegistration();
+            frm.Show();
+            this.Hide();
         }
     }
 }

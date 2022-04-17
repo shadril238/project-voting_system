@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VotingSystemApplication.Entities;
 using VotingSystemApplication.Presentation_Layer;
 
 namespace VotingSystemApplication.Data_Access_Layer
@@ -281,5 +282,40 @@ namespace VotingSystemApplication.Data_Access_Layer
 
 
         }
+
+        private void btn_register_Click(object sender, EventArgs e)
+        {
+            User user = new User();
+            user.UserFirstName = txtBox_name1.Text;
+            user.UserLastName = txtBox_name2.Text;
+            user.UserEmail = txtBox_email.Text;
+            user.UserPhone = txtBox_phoneno.Text;
+            user.UserDateOfBirth = dateTimePicker_dob.Text;
+            user.UserGender = comboBox_gender.Text;
+            user.UserFatherName = txtBox_father.Text;
+            user.UserMotherName = txtBox_mother.Text;
+            user.UserLocation = txtBox_location.Text;
+            user.UserThana = txtBox_thana.Text;
+            user.UserDistrict = txtBox_district.Text;
+            user.UserDivision = comboBox_division.Text;
+            user.UserBloodGroup = comboBox_bloodgroup.Text;
+            user.UserPassword = txtBox_password.Text; 
+            
+            
+            UserDataAccess userAccess = new UserDataAccess();
+
+            bool flag1 = userAccess.InsertUserPassWord(user);
+           
+
+            bool flag2 = userAccess.InsertUserData(user);
+            
+            if (flag1 && flag2) { MessageBox.Show("Shifat we did it"); }
+            else { MessageBox.Show("Not Registered"); }
+
+
+
+        }
+
+        
     }
 }

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_UserRegistration));
             this.pnl_left = new System.Windows.Forms.Panel();
+            this.lbl_dp = new System.Windows.Forms.Label();
             this.lbl_backtologin = new System.Windows.Forms.Label();
             this.pictureBox_backtoogin = new System.Windows.Forms.PictureBox();
             this.pictureBox_dp = new System.Windows.Forms.PictureBox();
@@ -71,7 +72,6 @@
             this.txtBox_name2 = new System.Windows.Forms.TextBox();
             this.txtBox_name1 = new System.Windows.Forms.TextBox();
             this.pictureBox_windowclosingReg = new System.Windows.Forms.PictureBox();
-            this.lbl_dp = new System.Windows.Forms.Label();
             this.pnl_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_backtoogin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_dp)).BeginInit();
@@ -105,6 +105,18 @@
             this.pnl_left.Name = "pnl_left";
             this.pnl_left.Size = new System.Drawing.Size(250, 674);
             this.pnl_left.TabIndex = 0;
+            // 
+            // lbl_dp
+            // 
+            this.lbl_dp.AutoSize = true;
+            this.lbl_dp.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_dp.ForeColor = System.Drawing.Color.White;
+            this.lbl_dp.Location = new System.Drawing.Point(85, 246);
+            this.lbl_dp.Name = "lbl_dp";
+            this.lbl_dp.Size = new System.Drawing.Size(91, 19);
+            this.lbl_dp.TabIndex = 44;
+            this.lbl_dp.Text = "Select File";
+            this.lbl_dp.Click += new System.EventHandler(this.lbl_dp_Click);
             // 
             // lbl_backtologin
             // 
@@ -456,6 +468,7 @@
             this.btn_register.TabIndex = 16;
             this.btn_register.Text = "Register";
             this.btn_register.UseVisualStyleBackColor = false;
+            this.btn_register.Click += new System.EventHandler(this.btn_register_Click);
             // 
             // pictureBox_mother
             // 
@@ -505,6 +518,7 @@
             this.comboBox_gender.Size = new System.Drawing.Size(279, 28);
             this.comboBox_gender.TabIndex = 10;
             this.comboBox_gender.Text = "Select Gender";
+          //  this.comboBox_gender.SelectedIndexChanged += new System.EventHandler(this.comboBox_gender_SelectedIndexChanged);
             this.comboBox_gender.Enter += new System.EventHandler(this.comboBox_gender_Enter);
             this.comboBox_gender.Leave += new System.EventHandler(this.comboBox_gender_Leave);
             // 
@@ -608,18 +622,6 @@
             this.pictureBox_windowclosingReg.TabIndex = 40;
             this.pictureBox_windowclosingReg.TabStop = false;
             this.pictureBox_windowclosingReg.Click += new System.EventHandler(this.pictureBox_windowclosingReg_Click);
-            // 
-            // lbl_dp
-            // 
-            this.lbl_dp.AutoSize = true;
-            this.lbl_dp.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_dp.ForeColor = System.Drawing.Color.White;
-            this.lbl_dp.Location = new System.Drawing.Point(85, 246);
-            this.lbl_dp.Name = "lbl_dp";
-            this.lbl_dp.Size = new System.Drawing.Size(91, 19);
-            this.lbl_dp.TabIndex = 44;
-            this.lbl_dp.Text = "Select File";
-            this.lbl_dp.Click += new System.EventHandler(this.lbl_dp_Click);
             // 
             // frm_UserRegistration
             // 
