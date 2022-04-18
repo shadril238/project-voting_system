@@ -16,7 +16,7 @@ namespace VotingSystemApplication.Data_Access_Layer
         {
             string sql = "SELECT * FROM UsersAuth";
             SqlDataReader reader = this.GetData(sql);
-
+            
             while (reader.Read())
             {
                 User user = new User();
@@ -24,11 +24,9 @@ namespace VotingSystemApplication.Data_Access_Layer
                 user.UserPassword = reader["userpassword"].ToString();
                 if (email == user.UserEmail && password == user.UserPassword)
                 {
-                    //Dispose();
                     return true;
                 }
             }
-            //Dispose();
             return false;
         }
 
@@ -39,15 +37,40 @@ namespace VotingSystemApplication.Data_Access_Layer
             int flag = this.ExecuteQuery(sql);
             return flag > 0;
         }
-
-        public bool InsertUserPassWord(User user) {
-
+        // user password store
+        public bool InsertUserPassWord(User user) 
+        {
             string sql = "INSERT INTO UsersAuth(useremail, userpassword) VALUES ('"+user.UserEmail+"', '"+user.UserPassword+"')";
             int flag = this.ExecuteQuery(sql);
             return flag > 0;
         }
-        
-
+        //user data on dashboard
+        public User UserData(string email)
+        {
+            User user=null;
+            string sql = "SELECT * FROM Users WHERE useremail='"+email+"'" ;
+            SqlDataReader reader = this.GetData(sql);
+           
+            while (reader.Read())
+            {
+                user = new User();
+                user.UserId = reader["userid"].ToString();
+                user.UserFirstName = reader["userfirstname"].ToString();
+                user.UserLastName = reader["userlastname"].ToString();
+                user.UserEmail = reader["useremail"].ToString();
+                user.UserPhone = reader["userphone"].ToString();
+                user.UserGender = reader["usergender"].ToString();
+                user.UserBloodGroup = reader["userbloodgroup"].ToString();
+                user.UserFatherName = reader["userfathername"].ToString();
+                user.UserMotherName = reader["usermothername"].ToString();
+                user.UserLocation = reader["userlocation"].ToString() ;
+                user.UserThana = reader["userthana"].ToString();
+                user.UserDistrict = reader["userdistrict"].ToString();
+                user.UserDivision = reader["userdivision"].ToString();
+            }
+            
+            return user;
+        }
         //All Users Data
         public List<User> GetUsers()
         {

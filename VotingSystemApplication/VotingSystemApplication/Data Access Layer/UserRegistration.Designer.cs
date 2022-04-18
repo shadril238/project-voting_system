@@ -492,14 +492,14 @@
             // chkBox_terms
             // 
             this.chkBox_terms.AutoSize = true;
-            this.chkBox_terms.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkBox_terms.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkBox_terms.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.chkBox_terms.Location = new System.Drawing.Point(417, 442);
+            this.chkBox_terms.Location = new System.Drawing.Point(426, 444);
             this.chkBox_terms.Name = "chkBox_terms";
             this.chkBox_terms.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.chkBox_terms.Size = new System.Drawing.Size(331, 30);
+            this.chkBox_terms.Size = new System.Drawing.Size(312, 27);
             this.chkBox_terms.TabIndex = 17;
-            this.chkBox_terms.Text = "I agree to the Privacy Policy";
+            this.chkBox_terms.Text = "I agree to the Privacy Policy.";
             this.chkBox_terms.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.chkBox_terms.UseVisualStyleBackColor = true;
             this.chkBox_terms.Click += new System.EventHandler(this.chkBox_terms_Click);
@@ -518,7 +518,6 @@
             this.comboBox_gender.Size = new System.Drawing.Size(279, 28);
             this.comboBox_gender.TabIndex = 10;
             this.comboBox_gender.Text = "Select Gender";
-          //  this.comboBox_gender.SelectedIndexChanged += new System.EventHandler(this.comboBox_gender_SelectedIndexChanged);
             this.comboBox_gender.Enter += new System.EventHandler(this.comboBox_gender_Enter);
             this.comboBox_gender.Leave += new System.EventHandler(this.comboBox_gender_Leave);
             // 

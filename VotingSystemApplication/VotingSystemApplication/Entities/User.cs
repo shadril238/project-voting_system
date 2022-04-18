@@ -8,15 +8,13 @@ namespace VotingSystemApplication.Entities
 {
     internal class User
     {
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public string UserFirstName { get; set; }
         public string UserLastName { get; set; }
 
         public string UserEmail { get; set; }
         public string UserPhone { get; set; }
-        public string UserPassword { get; set; }    
-
-
+        public string UserPassword { get; set; }
         public string UserDateOfBirth { get; set; }
 
         public string UserGender { get; set; }

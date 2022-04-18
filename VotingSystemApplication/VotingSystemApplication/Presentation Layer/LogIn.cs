@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using VotingSystemApplication.Data_Access_Layer;
+using VotingSystemApplication.Entities;
 
 namespace VotingSystemApplication.Presentation_Layer
 {
@@ -93,9 +94,21 @@ namespace VotingSystemApplication.Presentation_Layer
             {
                 //All the backend mechanism for Register button
                 UserDataAccess user=new UserDataAccess();
+                UserDataAccess user1 = new UserDataAccess();
                 if (user.LoginUsers(txt_email.Text, txt_password.Text))
                 {
-                    MessageBox.Show("Dashboard Pending!");
+                    //user.Dispose();
+                    User userd=new User();
+                    //MessageBox.Show("Dashboard Pending!");
+                    frm_UserDashboard dashboard=new frm_UserDashboard();
+                    user.Dispose();
+
+                    userd = user1.UserData(txt_email.Text);
+                    //user.Dispose();
+                    dashboard.SetData(userd);
+                    dashboard.Show();
+                    user1.Dispose();
+                    this.Hide();
                 }
                 else
                 {
