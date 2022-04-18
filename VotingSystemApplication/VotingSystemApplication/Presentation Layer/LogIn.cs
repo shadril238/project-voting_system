@@ -93,19 +93,19 @@ namespace VotingSystemApplication.Presentation_Layer
             else
             {
                 //All the backend mechanism for Register button
-                UserDataAccess user=new UserDataAccess();
-                UserDataAccess user1 = new UserDataAccess();
-                if (user.LoginUsers(txt_email.Text, txt_password.Text))
+                UserDataAccess user1=new UserDataAccess();
+                UserDataAccess user2 = new UserDataAccess();
+                if (user1.LoginUsers(txt_email.Text, txt_password.Text))
                 {
                     //user.Dispose();
-                    User userd=new User();
+                    User user=new User();
                     //MessageBox.Show("Dashboard Pending!");
                     frm_UserDashboard dashboard=new frm_UserDashboard();
-                    user.Dispose();
+                    user1.Dispose();
 
-                    userd = user1.UserData(txt_email.Text);
+                    user = user2.UserData(txt_email.Text);
                     //user.Dispose();
-                    dashboard.SetData(userd);
+                    dashboard.SetData(user);
                     dashboard.Show();
                     user1.Dispose();
                     this.Hide();
