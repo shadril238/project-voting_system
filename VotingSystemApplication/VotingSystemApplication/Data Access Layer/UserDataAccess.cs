@@ -33,7 +33,7 @@ namespace VotingSystemApplication.Data_Access_Layer
         //user registration
         public bool InsertUserData(User user)
         {
-            string sql = "INSERT INTO Users(userfirstname, userlastname, useremail, userphone,usergender, userbloodgroup, userfathername, usermothername,userlocation, userthana, userdistrict, userdivision) VALUES ('"+user.UserFirstName+"', '"+user.UserLastName+"', '"+user.UserEmail+"' , '"+user.UserPhone+"', '"+user.UserGender+"', '"+user.UserBloodGroup + "', '"+user.UserFatherName+"' , '"+user.UserMotherName+"', '"+user.UserLocation+"', '"+user.UserThana+"', '"+user.UserDistrict+"', '"+user.UserDivision+"')";
+            string sql = "INSERT INTO Users(userfirstname, userlastname, useremail, userphone,usergender, userbloodgroup, userfathername, usermothername,userlocation, userthana, userdistrict, userdivision, userdob) VALUES ('"+user.UserFirstName+"', '"+user.UserLastName+"', '"+user.UserEmail+"' , '"+user.UserPhone+"', '"+user.UserGender+"', '"+user.UserBloodGroup + "', '"+user.UserFatherName+"' , '"+user.UserMotherName+"', '"+user.UserLocation+"', '"+user.UserThana+"', '"+user.UserDistrict+"', '"+user.UserDivision+ "','" + user.UserDateOfBirth + "')";
             int flag = this.ExecuteQuery(sql);
             return flag > 0;
         }
@@ -67,8 +67,8 @@ namespace VotingSystemApplication.Data_Access_Layer
                 user.UserThana = reader["userthana"].ToString();
                 user.UserDistrict = reader["userdistrict"].ToString();
                 user.UserDivision = reader["userdivision"].ToString();
+                user.UserDateOfBirth = reader["userdob"].ToString();
             }
-            
             return user;
         }
         //All Users Data
@@ -85,6 +85,11 @@ namespace VotingSystemApplication.Data_Access_Layer
                 users.Add(user);
             }
             return users;
+        }
+        //Vote option enable
+        public bool EnableVote()
+        {
+            return AdminDataAccess.enableVote;
         }
     }
 }

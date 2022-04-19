@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace VotingSystemApplication.Entities
 {
-    internal class Candidate
+    internal class Candidate:User //Candidate is also a user
     {
+        public string politicalParty { get; set; }
+        public string marka { get; set; } ///need to change ...abir do it marka er english
     }
 }

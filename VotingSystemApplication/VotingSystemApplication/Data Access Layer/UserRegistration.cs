@@ -300,17 +300,19 @@ namespace VotingSystemApplication.Data_Access_Layer
             user.UserDivision = comboBox_division.Text;
             user.UserBloodGroup = comboBox_bloodgroup.Text;
             user.UserPassword = txtBox_password.Text; 
-            
-            
+   
             UserDataAccess userAccess = new UserDataAccess();
 
-            bool flag1 = userAccess.InsertUserPassWord(user);
-           
-
-            bool flag2 = userAccess.InsertUserData(user);
+            bool flag1 = userAccess.InsertUserPassWord(user); //UsersAuth table
+      
+            bool flag2 = userAccess.InsertUserData(user);//Users table
             
             if (flag1 && flag2) { MessageBox.Show("Shifat we did it"); }
             else { MessageBox.Show("Not Registered"); }
+            //After register redirect to Log In Page
+            frm_LogIn login=new frm_LogIn();
+            login.Show();
+            this.Hide();
 
 
 

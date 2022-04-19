@@ -11,3 +11,6 @@ C:\Users\SHADRIL HASSAN\Desktop\project-voting_system\VotingSystemApplication\Vo
 C:\Users\SHADRIL HASSAN\Desktop\project-voting_system\VotingSystemApplication\VotingSystemApplication\bin\Debug\VotingSystemApplication.pdb
 C:\Users\SHADRIL HASSAN\Desktop\project-voting_system\VotingSystemApplication\VotingSystemApplication\obj\Debug\VotingSystemApplication.csproj.AssemblyReference.cache
 C:\Users\SHADRIL HASSAN\Desktop\project-voting_system\VotingSystemApplication\VotingSystemApplication\obj\Debug\VotingSystemApplication.Presentation_Layer.frm_UserDashboard.resources
+C:\Users\SHADRIL HASSAN\Desktop\project-voting_system\VotingSystemApplication\VotingSystemApplication\obj\Debug\VotingSystemApplication.Data_Access_Layer.frm_AdminDashboard.resources
+C:\Users\SHADRIL HASSAN\Desktop\project-voting_system\VotingSystemApplication\VotingSystemApplication\obj\Debug\VotingSystemApplication.Presentation_Layer.frm_CandidateDashboard.resources
+C:\Users\SHADRIL HASSAN\Desktop\project-voting_system\VotingSystemApplication\VotingSystemApplication\obj\Debug\VotingSystemApplication.Presentation_Layer.frm_VotingDashboard.resources
