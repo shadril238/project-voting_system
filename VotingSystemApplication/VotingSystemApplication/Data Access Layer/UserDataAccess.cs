@@ -91,5 +91,59 @@ namespace VotingSystemApplication.Data_Access_Layer
         {
             return AdminDataAccess.enableVote;
         }
+
+        //update first name
+        public bool UpdateUserFirstName(int userid, string firstname) {
+            string sql = "UPDATE Users SET userfirstname = '"+firstname+"' WHERE userid = '"+userid+"'";
+            int result  =  this.ExecuteQuery(sql);
+            return result > 0;
+        }
+        //update last Name
+        public bool UpdateUserLastName(int userid, string lastname)
+        {
+            string sql = "UPDATE Users SET userlastname = '" + lastname + "' WHERE userid = '" + userid + "'";
+            int result = this.ExecuteQuery(sql);
+            return result > 0;
+        }
+
+        //update father name
+        public bool UpdateUserFatherName(int userid, string fathername)
+        {
+            string sql = "UPDATE Users SET userfathername = '" + fathername + "' WHERE userid = '" + userid + "'";
+            int result = this.ExecuteQuery(sql);
+            return result > 0;
+        }
+
+        // update mother name
+        public bool UpdateUserMotherName(int userid, string  mothername)
+        {
+            string sql = "UPDATE Users SET usermothername = '" + mothername + "' WHERE userid = '" + userid + "'";
+            int result = this.ExecuteQuery(sql);
+            return result > 0;
+        }
+
+        // update blood group
+        public bool UpdateUserBloodGroup(int userid, string bloodgroup)
+        {
+            string sql = "UPDATE Users SET userbloodgroup = '" + bloodgroup + "' WHERE userid = '" + userid + "'";
+            int result = this.ExecuteQuery(sql);
+            return result > 0;
+        }
+
+        // update dob
+        public bool UpdateUserDOB(int userid, string dob)
+        {
+            string sql = "UPDATE Users SET userdob = '" + dob + "' WHERE userid = '" + userid + "'";
+            int result = this.ExecuteQuery(sql);
+            return result > 0;
+        }
+
+        // update phone
+        public bool UpdateUserPhone(int userid, string phone)
+        {
+            string sql = "UPDATE Users SET userphone = '" + phone + "' WHERE userid = '" + userid + "'";
+            int result = this.ExecuteQuery(sql);
+            return result > 0;
+        }
     }
 }

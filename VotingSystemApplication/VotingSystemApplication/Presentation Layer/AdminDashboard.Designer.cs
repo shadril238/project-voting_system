@@ -38,6 +38,12 @@
             this.btn_enablevote = new System.Windows.Forms.Button();
             this.btn_voteresult = new System.Windows.Forms.Button();
             this.btn_disablevote = new System.Windows.Forms.Button();
+            this.grpbox_verifieduser = new System.Windows.Forms.GroupBox();
+            this.grpbox_unverifiedusers = new System.Windows.Forms.GroupBox();
+            this.txt_userid = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lbl_id = new System.Windows.Forms.Label();
+            this.btn_verify = new System.Windows.Forms.Button();
             this.pnl_1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_windowclosingReg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_backtologin)).BeginInit();
@@ -46,6 +52,12 @@
             // pnl_1
             // 
             this.pnl_1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.pnl_1.Controls.Add(this.btn_verify);
+            this.pnl_1.Controls.Add(this.lbl_id);
+            this.pnl_1.Controls.Add(this.groupBox3);
+            this.pnl_1.Controls.Add(this.txt_userid);
+            this.pnl_1.Controls.Add(this.grpbox_unverifiedusers);
+            this.pnl_1.Controls.Add(this.grpbox_verifieduser);
             this.pnl_1.Controls.Add(this.lbl_welcome);
             this.pnl_1.Controls.Add(this.pictureBox_windowclosingReg);
             this.pnl_1.Location = new System.Drawing.Point(264, -1);
@@ -66,7 +78,7 @@
             // pictureBox_windowclosingReg
             // 
             this.pictureBox_windowclosingReg.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_windowclosingReg.Image")));
-            this.pictureBox_windowclosingReg.Location = new System.Drawing.Point(738, 3);
+            this.pictureBox_windowclosingReg.Location = new System.Drawing.Point(736, 3);
             this.pictureBox_windowclosingReg.Name = "pictureBox_windowclosingReg";
             this.pictureBox_windowclosingReg.Size = new System.Drawing.Size(57, 64);
             this.pictureBox_windowclosingReg.TabIndex = 44;
@@ -138,6 +150,64 @@
             this.btn_disablevote.UseVisualStyleBackColor = true;
             this.btn_disablevote.Click += new System.EventHandler(this.btn_disablevote_Click);
             // 
+            // grpbox_verifieduser
+            // 
+            this.grpbox_verifieduser.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpbox_verifieduser.Location = new System.Drawing.Point(27, 54);
+            this.grpbox_verifieduser.Name = "grpbox_verifieduser";
+            this.grpbox_verifieduser.Size = new System.Drawing.Size(716, 138);
+            this.grpbox_verifieduser.TabIndex = 60;
+            this.grpbox_verifieduser.TabStop = false;
+            this.grpbox_verifieduser.Text = "Verified Users";
+            // 
+            // grpbox_unverifiedusers
+            // 
+            this.grpbox_unverifiedusers.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpbox_unverifiedusers.Location = new System.Drawing.Point(27, 211);
+            this.grpbox_unverifiedusers.Name = "grpbox_unverifiedusers";
+            this.grpbox_unverifiedusers.Size = new System.Drawing.Size(716, 149);
+            this.grpbox_unverifiedusers.TabIndex = 61;
+            this.grpbox_unverifiedusers.TabStop = false;
+            this.grpbox_unverifiedusers.Text = "Unverified Users";
+            // 
+            // txt_userid
+            // 
+            this.txt_userid.Location = new System.Drawing.Point(115, 379);
+            this.txt_userid.Multiline = true;
+            this.txt_userid.Name = "txt_userid";
+            this.txt_userid.Size = new System.Drawing.Size(180, 32);
+            this.txt_userid.TabIndex = 0;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Location = new System.Drawing.Point(27, 433);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(716, 149);
+            this.groupBox3.TabIndex = 62;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "groupBox3";
+            // 
+            // lbl_id
+            // 
+            this.lbl_id.AutoSize = true;
+            this.lbl_id.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_id.Location = new System.Drawing.Point(22, 384);
+            this.lbl_id.Name = "lbl_id";
+            this.lbl_id.Size = new System.Drawing.Size(87, 27);
+            this.lbl_id.TabIndex = 63;
+            this.lbl_id.Text = "User ID";
+            // 
+            // btn_verify
+            // 
+            this.btn_verify.BackColor = System.Drawing.Color.White;
+            this.btn_verify.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_verify.Location = new System.Drawing.Point(373, 377);
+            this.btn_verify.Name = "btn_verify";
+            this.btn_verify.Size = new System.Drawing.Size(101, 33);
+            this.btn_verify.TabIndex = 66;
+            this.btn_verify.Text = "Verify";
+            this.btn_verify.UseVisualStyleBackColor = false;
+            // 
             // frm_AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -152,6 +222,7 @@
             this.Controls.Add(this.btn_disablevote);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_AdminDashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminDashboard";
             this.pnl_1.ResumeLayout(false);
             this.pnl_1.PerformLayout();
@@ -173,5 +244,11 @@
         private System.Windows.Forms.Button btn_enablevote;
         private System.Windows.Forms.Button btn_voteresult;
         private System.Windows.Forms.Button btn_disablevote;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox txt_userid;
+        private System.Windows.Forms.GroupBox grpbox_unverifiedusers;
+        private System.Windows.Forms.GroupBox grpbox_verifieduser;
+        private System.Windows.Forms.Label lbl_id;
+        private System.Windows.Forms.Button btn_verify;
     }
 }

@@ -9,6 +9,6 @@ namespace VotingSystemApplication.Entities
     internal class Candidate:User //Candidate is also a user
     {
         public string politicalParty { get; set; }
-        public string marka { get; set; } ///need to change ...abir do it marka er english
+        public string candidateRoll { get; set; }
     }
 }

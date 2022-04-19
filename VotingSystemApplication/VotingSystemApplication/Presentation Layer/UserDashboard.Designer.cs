@@ -31,6 +31,28 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_UserDashboard));
             this.pnl_1 = new System.Windows.Forms.Panel();
             this.pnl_updatedata = new System.Windows.Forms.Panel();
+            this.btn_fathername = new System.Windows.Forms.Button();
+            this.btn_dob = new System.Windows.Forms.Button();
+            this.btn_mothername = new System.Windows.Forms.Button();
+            this.btn_phnno = new System.Windows.Forms.Button();
+            this.btn_bg = new System.Windows.Forms.Button();
+            this.btn_lastname = new System.Windows.Forms.Button();
+            this.btn_firstname = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_8 = new System.Windows.Forms.Label();
+            this.lbl_7 = new System.Windows.Forms.Label();
+            this.lbl_6 = new System.Windows.Forms.Label();
+            this.lbl_5 = new System.Windows.Forms.Label();
+            this.lbl_4 = new System.Windows.Forms.Label();
+            this.lbl_2 = new System.Windows.Forms.Label();
+            this.lbl_3 = new System.Windows.Forms.Label();
+            this.dateTimePicker_updatedob = new System.Windows.Forms.DateTimePicker();
+            this.txt_updatemother = new System.Windows.Forms.TextBox();
+            this.txt_updatefather = new System.Windows.Forms.TextBox();
+            this.txt_updatephn = new System.Windows.Forms.TextBox();
+            this.txt_updatebg = new System.Windows.Forms.TextBox();
+            this.txt_updatelastname = new System.Windows.Forms.TextBox();
+            this.txt_updatefirstname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_welcome = new System.Windows.Forms.Label();
             this.pnl_userdata = new System.Windows.Forms.Panel();
@@ -88,20 +110,270 @@
             // 
             // pnl_updatedata
             // 
+            this.pnl_updatedata.Controls.Add(this.btn_fathername);
+            this.pnl_updatedata.Controls.Add(this.btn_dob);
+            this.pnl_updatedata.Controls.Add(this.btn_mothername);
+            this.pnl_updatedata.Controls.Add(this.btn_phnno);
+            this.pnl_updatedata.Controls.Add(this.btn_bg);
+            this.pnl_updatedata.Controls.Add(this.btn_lastname);
+            this.pnl_updatedata.Controls.Add(this.btn_firstname);
+            this.pnl_updatedata.Controls.Add(this.label2);
+            this.pnl_updatedata.Controls.Add(this.lbl_8);
+            this.pnl_updatedata.Controls.Add(this.lbl_7);
+            this.pnl_updatedata.Controls.Add(this.lbl_6);
+            this.pnl_updatedata.Controls.Add(this.lbl_5);
+            this.pnl_updatedata.Controls.Add(this.lbl_4);
+            this.pnl_updatedata.Controls.Add(this.lbl_2);
+            this.pnl_updatedata.Controls.Add(this.lbl_3);
+            this.pnl_updatedata.Controls.Add(this.dateTimePicker_updatedob);
+            this.pnl_updatedata.Controls.Add(this.txt_updatemother);
+            this.pnl_updatedata.Controls.Add(this.txt_updatefather);
+            this.pnl_updatedata.Controls.Add(this.txt_updatephn);
+            this.pnl_updatedata.Controls.Add(this.txt_updatebg);
+            this.pnl_updatedata.Controls.Add(this.txt_updatelastname);
+            this.pnl_updatedata.Controls.Add(this.txt_updatefirstname);
             this.pnl_updatedata.Controls.Add(this.label1);
-            this.pnl_updatedata.Location = new System.Drawing.Point(33, 73);
+            this.pnl_updatedata.Location = new System.Drawing.Point(33, 76);
             this.pnl_updatedata.Name = "pnl_updatedata";
             this.pnl_updatedata.Size = new System.Drawing.Size(724, 556);
             this.pnl_updatedata.TabIndex = 46;
+            // 
+            // btn_fathername
+            // 
+            this.btn_fathername.BackColor = System.Drawing.Color.White;
+            this.btn_fathername.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_fathername.Location = new System.Drawing.Point(53, 334);
+            this.btn_fathername.Name = "btn_fathername";
+            this.btn_fathername.Size = new System.Drawing.Size(123, 33);
+            this.btn_fathername.TabIndex = 69;
+            this.btn_fathername.Text = "Update";
+            this.btn_fathername.UseVisualStyleBackColor = false;
+            this.btn_fathername.Click += new System.EventHandler(this.btn_fathername_Click);
+            // 
+            // btn_dob
+            // 
+            this.btn_dob.BackColor = System.Drawing.Color.White;
+            this.btn_dob.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dob.Location = new System.Drawing.Point(53, 434);
+            this.btn_dob.Name = "btn_dob";
+            this.btn_dob.Size = new System.Drawing.Size(123, 33);
+            this.btn_dob.TabIndex = 68;
+            this.btn_dob.Text = "Update";
+            this.btn_dob.UseVisualStyleBackColor = false;
+            this.btn_dob.Click += new System.EventHandler(this.btn_dob_Click);
+            // 
+            // btn_mothername
+            // 
+            this.btn_mothername.BackColor = System.Drawing.Color.White;
+            this.btn_mothername.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_mothername.Location = new System.Drawing.Point(428, 334);
+            this.btn_mothername.Name = "btn_mothername";
+            this.btn_mothername.Size = new System.Drawing.Size(118, 33);
+            this.btn_mothername.TabIndex = 67;
+            this.btn_mothername.Text = "Update";
+            this.btn_mothername.UseVisualStyleBackColor = false;
+            this.btn_mothername.Click += new System.EventHandler(this.btn_mothername_Click);
+            // 
+            // btn_phnno
+            // 
+            this.btn_phnno.BackColor = System.Drawing.Color.White;
+            this.btn_phnno.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_phnno.Location = new System.Drawing.Point(429, 221);
+            this.btn_phnno.Name = "btn_phnno";
+            this.btn_phnno.Size = new System.Drawing.Size(117, 33);
+            this.btn_phnno.TabIndex = 66;
+            this.btn_phnno.Text = "Update";
+            this.btn_phnno.UseVisualStyleBackColor = false;
+            this.btn_phnno.Click += new System.EventHandler(this.btn_phnno_Click);
+            // 
+            // btn_bg
+            // 
+            this.btn_bg.BackColor = System.Drawing.Color.White;
+            this.btn_bg.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_bg.Location = new System.Drawing.Point(53, 222);
+            this.btn_bg.Name = "btn_bg";
+            this.btn_bg.Size = new System.Drawing.Size(123, 33);
+            this.btn_bg.TabIndex = 65;
+            this.btn_bg.Text = "Update";
+            this.btn_bg.UseVisualStyleBackColor = false;
+            this.btn_bg.Click += new System.EventHandler(this.btn_bg_Click);
+            // 
+            // btn_lastname
+            // 
+            this.btn_lastname.BackColor = System.Drawing.Color.White;
+            this.btn_lastname.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_lastname.Location = new System.Drawing.Point(430, 95);
+            this.btn_lastname.Name = "btn_lastname";
+            this.btn_lastname.Size = new System.Drawing.Size(116, 33);
+            this.btn_lastname.TabIndex = 64;
+            this.btn_lastname.Text = "Update";
+            this.btn_lastname.UseVisualStyleBackColor = false;
+            this.btn_lastname.Click += new System.EventHandler(this.btn_lastname_Click);
+            // 
+            // btn_firstname
+            // 
+            this.btn_firstname.BackColor = System.Drawing.Color.White;
+            this.btn_firstname.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_firstname.Location = new System.Drawing.Point(53, 95);
+            this.btn_firstname.Name = "btn_firstname";
+            this.btn_firstname.Size = new System.Drawing.Size(123, 33);
+            this.btn_firstname.TabIndex = 63;
+            this.btn_firstname.Text = "Update";
+            this.btn_firstname.UseVisualStyleBackColor = false;
+            this.btn_firstname.Click += new System.EventHandler(this.btn_firstname_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(48, 375);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(145, 27);
+            this.label2.TabIndex = 62;
+            this.label2.Text = "Date of Birth";
+            // 
+            // lbl_8
+            // 
+            this.lbl_8.AutoSize = true;
+            this.lbl_8.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_8.ForeColor = System.Drawing.Color.White;
+            this.lbl_8.Location = new System.Drawing.Point(424, 259);
+            this.lbl_8.Name = "lbl_8";
+            this.lbl_8.Size = new System.Drawing.Size(181, 27);
+            this.lbl_8.TabIndex = 61;
+            this.lbl_8.Text = "Mother\'s Name";
+            // 
+            // lbl_7
+            // 
+            this.lbl_7.AutoSize = true;
+            this.lbl_7.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_7.ForeColor = System.Drawing.Color.White;
+            this.lbl_7.Location = new System.Drawing.Point(48, 258);
+            this.lbl_7.Name = "lbl_7";
+            this.lbl_7.Size = new System.Drawing.Size(171, 27);
+            this.lbl_7.TabIndex = 60;
+            this.lbl_7.Text = "Father\'s Name";
+            // 
+            // lbl_6
+            // 
+            this.lbl_6.AutoSize = true;
+            this.lbl_6.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_6.ForeColor = System.Drawing.Color.White;
+            this.lbl_6.Location = new System.Drawing.Point(425, 146);
+            this.lbl_6.Name = "lbl_6";
+            this.lbl_6.Size = new System.Drawing.Size(121, 27);
+            this.lbl_6.TabIndex = 59;
+            this.lbl_6.Text = "Phone No";
+            // 
+            // lbl_5
+            // 
+            this.lbl_5.AutoSize = true;
+            this.lbl_5.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_5.ForeColor = System.Drawing.Color.White;
+            this.lbl_5.Location = new System.Drawing.Point(425, 146);
+            this.lbl_5.Name = "lbl_5";
+            this.lbl_5.Size = new System.Drawing.Size(0, 27);
+            this.lbl_5.TabIndex = 58;
+            // 
+            // lbl_4
+            // 
+            this.lbl_4.AutoSize = true;
+            this.lbl_4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_4.ForeColor = System.Drawing.Color.White;
+            this.lbl_4.Location = new System.Drawing.Point(48, 143);
+            this.lbl_4.Name = "lbl_4";
+            this.lbl_4.Size = new System.Drawing.Size(152, 27);
+            this.lbl_4.TabIndex = 57;
+            this.lbl_4.Text = "Blood Group";
+            // 
+            // lbl_2
+            // 
+            this.lbl_2.AutoSize = true;
+            this.lbl_2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_2.ForeColor = System.Drawing.Color.White;
+            this.lbl_2.Location = new System.Drawing.Point(424, 15);
+            this.lbl_2.Name = "lbl_2";
+            this.lbl_2.Size = new System.Drawing.Size(129, 27);
+            this.lbl_2.TabIndex = 56;
+            this.lbl_2.Text = "Last Name";
+            // 
+            // lbl_3
+            // 
+            this.lbl_3.AutoSize = true;
+            this.lbl_3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_3.ForeColor = System.Drawing.Color.White;
+            this.lbl_3.Location = new System.Drawing.Point(48, 15);
+            this.lbl_3.Name = "lbl_3";
+            this.lbl_3.Size = new System.Drawing.Size(128, 27);
+            this.lbl_3.TabIndex = 55;
+            this.lbl_3.Text = "First Name";
+            // 
+            // dateTimePicker_updatedob
+            // 
+            this.dateTimePicker_updatedob.Location = new System.Drawing.Point(52, 405);
+            this.dateTimePicker_updatedob.Name = "dateTimePicker_updatedob";
+            this.dateTimePicker_updatedob.Size = new System.Drawing.Size(232, 22);
+            this.dateTimePicker_updatedob.TabIndex = 53;
+            
+            // 
+            // txt_updatemother
+            // 
+            this.txt_updatemother.Location = new System.Drawing.Point(429, 289);
+            this.txt_updatemother.Multiline = true;
+            this.txt_updatemother.Name = "txt_updatemother";
+            this.txt_updatemother.Size = new System.Drawing.Size(233, 39);
+            this.txt_updatemother.TabIndex = 52;
+            // 
+            // txt_updatefather
+            // 
+            this.txt_updatefather.Location = new System.Drawing.Point(53, 289);
+            this.txt_updatefather.Multiline = true;
+            this.txt_updatefather.Name = "txt_updatefather";
+            this.txt_updatefather.Size = new System.Drawing.Size(233, 39);
+            this.txt_updatefather.TabIndex = 51;
+            // 
+            // txt_updatephn
+            // 
+            this.txt_updatephn.Location = new System.Drawing.Point(429, 176);
+            this.txt_updatephn.Multiline = true;
+            this.txt_updatephn.Name = "txt_updatephn";
+            this.txt_updatephn.Size = new System.Drawing.Size(233, 39);
+            this.txt_updatephn.TabIndex = 50;
+            // 
+            // txt_updatebg
+            // 
+            this.txt_updatebg.Location = new System.Drawing.Point(53, 176);
+            this.txt_updatebg.Multiline = true;
+            this.txt_updatebg.Name = "txt_updatebg";
+            this.txt_updatebg.Size = new System.Drawing.Size(233, 39);
+            this.txt_updatebg.TabIndex = 49;
+            // 
+            // txt_updatelastname
+            // 
+            this.txt_updatelastname.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_updatelastname.Location = new System.Drawing.Point(429, 45);
+            this.txt_updatelastname.Multiline = true;
+            this.txt_updatelastname.Name = "txt_updatelastname";
+            this.txt_updatelastname.Size = new System.Drawing.Size(233, 39);
+            this.txt_updatelastname.TabIndex = 48;
+            // 
+            // txt_updatefirstname
+            // 
+            this.txt_updatefirstname.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_updatefirstname.Location = new System.Drawing.Point(53, 45);
+            this.txt_updatefirstname.Multiline = true;
+            this.txt_updatefirstname.Name = "txt_updatefirstname";
+            this.txt_updatefirstname.Size = new System.Drawing.Size(233, 39);
+            this.txt_updatefirstname.TabIndex = 47;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(231, 92);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(0, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
             // 
             // lbl_welcome
             // 
@@ -551,5 +823,27 @@
         private System.Windows.Forms.Button btn_profile;
         private System.Windows.Forms.Label lbl_welcome;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txt_updatemother;
+        private System.Windows.Forms.TextBox txt_updatefather;
+        private System.Windows.Forms.TextBox txt_updatephn;
+        private System.Windows.Forms.TextBox txt_updatebg;
+        private System.Windows.Forms.TextBox txt_updatelastname;
+        private System.Windows.Forms.TextBox txt_updatefirstname;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_updatedob;
+        private System.Windows.Forms.Label lbl_6;
+        private System.Windows.Forms.Label lbl_5;
+        private System.Windows.Forms.Label lbl_4;
+        private System.Windows.Forms.Label lbl_2;
+        private System.Windows.Forms.Label lbl_3;
+        private System.Windows.Forms.Label lbl_8;
+        private System.Windows.Forms.Label lbl_7;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btn_fathername;
+        private System.Windows.Forms.Button btn_dob;
+        private System.Windows.Forms.Button btn_mothername;
+        private System.Windows.Forms.Button btn_phnno;
+        private System.Windows.Forms.Button btn_bg;
+        private System.Windows.Forms.Button btn_lastname;
+        private System.Windows.Forms.Button btn_firstname;
     }
 }

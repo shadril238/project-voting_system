@@ -33,8 +33,11 @@
             this.lbl_welcome = new System.Windows.Forms.Label();
             this.pnl_voteOption = new System.Windows.Forms.Panel();
             this.pictureBox_windowclosingReg = new System.Windows.Forms.PictureBox();
+            this.lbl_back = new System.Windows.Forms.Label();
+            this.pictureBox_backtouserdashboard = new System.Windows.Forms.PictureBox();
             this.pnl_1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_windowclosingReg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_backtouserdashboard)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_1
@@ -75,11 +78,35 @@
             this.pictureBox_windowclosingReg.TabStop = false;
             this.pictureBox_windowclosingReg.Click += new System.EventHandler(this.pictureBox_windowclosingReg_Click);
             // 
+            // lbl_back
+            // 
+            this.lbl_back.AutoSize = true;
+            this.lbl_back.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_back.ForeColor = System.Drawing.Color.Black;
+            this.lbl_back.Location = new System.Drawing.Point(83, 625);
+            this.lbl_back.Name = "lbl_back";
+            this.lbl_back.Size = new System.Drawing.Size(0, 18);
+            this.lbl_back.TabIndex = 45;
+            // 
+            // pictureBox_backtouserdashboard
+            // 
+            this.pictureBox_backtouserdashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_backtouserdashboard.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_backtouserdashboard.Image")));
+            this.pictureBox_backtouserdashboard.Location = new System.Drawing.Point(29, 616);
+            this.pictureBox_backtouserdashboard.Name = "pictureBox_backtouserdashboard";
+            this.pictureBox_backtouserdashboard.Size = new System.Drawing.Size(50, 34);
+            this.pictureBox_backtouserdashboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_backtouserdashboard.TabIndex = 44;
+            this.pictureBox_backtouserdashboard.TabStop = false;
+            this.pictureBox_backtouserdashboard.Click += new System.EventHandler(this.pictureBox_backtouserdashboard_Click);
+            // 
             // frm_VotingDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1062, 673);
+            this.Controls.Add(this.lbl_back);
+            this.Controls.Add(this.pictureBox_backtouserdashboard);
             this.Controls.Add(this.pnl_1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_VotingDashboard";
@@ -88,7 +115,9 @@
             this.pnl_1.ResumeLayout(false);
             this.pnl_1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_windowclosingReg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_backtouserdashboard)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -98,5 +127,7 @@
         private System.Windows.Forms.Label lbl_welcome;
         private System.Windows.Forms.Panel pnl_voteOption;
         private System.Windows.Forms.PictureBox pictureBox_windowclosingReg;
+        private System.Windows.Forms.Label lbl_back;
+        private System.Windows.Forms.PictureBox pictureBox_backtouserdashboard;
     }
 }

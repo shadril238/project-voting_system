@@ -21,5 +21,13 @@ namespace VotingSystemApplication.Presentation_Layer
         {
             Application.Exit();
         }
+
+        private void pictureBox_backtouserdashboard_Click(object sender, EventArgs e)
+        {
+            //back to vote dashboard to user dashboard
+            frm_UserDashboard user=new frm_UserDashboard();
+            user.Show();
+            this.Hide();
+        }
     }
 }
