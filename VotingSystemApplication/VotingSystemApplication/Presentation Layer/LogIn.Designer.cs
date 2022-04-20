@@ -159,8 +159,7 @@
             this.Combo_role.FormattingEnabled = true;
             this.Combo_role.Items.AddRange(new object[] {
             "USER",
-            "ADMIN",
-            "CANDIDATE"});
+            "ADMIN"});
             this.Combo_role.Location = new System.Drawing.Point(389, 177);
             this.Combo_role.Name = "Combo_role";
             this.Combo_role.Size = new System.Drawing.Size(201, 29);

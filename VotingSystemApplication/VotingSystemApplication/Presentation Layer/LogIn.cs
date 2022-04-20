@@ -109,9 +109,13 @@ namespace VotingSystemApplication.Presentation_Layer
                     
                     dashboard.SetData(user);
                     dashboard.Show();
-                    user2.Dispose();
+                    
                     
                     this.Hide();
+                    user1.Dispose();
+                    user2.Dispose();
+
+
                 }
                 else if (Combo_role.Text=="ADMIN") ///admin database
                 {

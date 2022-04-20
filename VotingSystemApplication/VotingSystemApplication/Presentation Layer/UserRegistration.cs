@@ -285,36 +285,49 @@ namespace VotingSystemApplication.Data_Access_Layer
 
         private void btn_register_Click(object sender, EventArgs e)
         {
-            User user = new User();
-            user.UserFirstName = txtBox_name1.Text;
-            user.UserLastName = txtBox_name2.Text;
-            user.UserEmail = txtBox_email.Text;
-            user.UserPhone = txtBox_phoneno.Text;
-            user.UserDateOfBirth = dateTimePicker_dob.Text;
-            user.UserGender = comboBox_gender.Text;
-            user.UserFatherName = txtBox_father.Text;
-            user.UserMotherName = txtBox_mother.Text;
-            user.UserLocation = txtBox_location.Text;
-            user.UserThana = txtBox_thana.Text;
-            user.UserDistrict = txtBox_district.Text;
-            user.UserDivision = comboBox_division.Text;
-            user.UserBloodGroup = comboBox_bloodgroup.Text;
-            user.UserPassword = txtBox_password.Text; 
-   
-            UserDataAccess userAccess = new UserDataAccess();
+            if(txtBox_cpassword.Text != txtBox_password.Text)
+            {
+                MessageBox.Show("Password did not matched!");
+            }
+            else
+            {
+                Candidate user = new Candidate();
 
-            bool flag1 = userAccess.InsertUserPassWord(user); //UsersAuth table
-      
-            bool flag2 = userAccess.InsertUserData(user);//Users table
-            
-            if (flag1 && flag2) { MessageBox.Show("Shifat we did it"); }
-            else { MessageBox.Show("Not Registered"); }
-            //After register redirect to Log In Page
-            frm_LogIn login=new frm_LogIn();
-            login.Show();
-            this.Hide();
+                user.UserFirstName = txtBox_name1.Text;
+                user.UserLastName = txtBox_name2.Text;
+                user.UserEmail = txtBox_email.Text;
+                user.UserPhone = txtBox_phoneno.Text;
+                user.UserDateOfBirth = dateTimePicker_dob.Text;
+                user.UserGender = comboBox_gender.Text;
+                user.UserFatherName = txtBox_father.Text;
+                user.UserMotherName = txtBox_mother.Text;
+                user.UserLocation = txtBox_location.Text;
+                user.UserThana = txtBox_thana.Text;
+                user.UserDistrict = txtBox_district.Text;
+                user.UserDivision = comboBox_division.Text;
+                user.UserBloodGroup = comboBox_bloodgroup.Text;
+                user.UserPassword = txtBox_password.Text;
+                user.isVerified = "false";
+                user.isCandidate = "false";
+                user.candidateRoll = "NA";
+                user.politicalParty = "NA";
+                user.totalvotes = 0;
+                User user1 = user; //polymorphism
+
+                UserDataAccess userAccess = new UserDataAccess();
+
+                bool flag1 = userAccess.InsertUserPassWord(user1); //UsersAuth table
+
+                bool flag2 = userAccess.InsertUserData(user);//Users Table
 
 
+                if (flag1 && flag2) { MessageBox.Show("Success!"); }
+                else { MessageBox.Show("Failed!"); }
+                //After register redirect to Log In Page
+                frm_LogIn login = new frm_LogIn();
+                login.Show();
+                this.Hide();
+            }
 
         }
 

@@ -40,5 +40,72 @@ namespace VotingSystemApplication.Data_Access_Layer
         {
             AdminDataAccess.enableVote = false;
         }
+
+        public void RefreshDataGridView()
+        {
+            UserDataAccess data1 = new UserDataAccess();
+            dataGridView_verified.DataSource = data1.VerifiedUsers();
+            UserDataAccess data2 = new UserDataAccess();
+            dataGridView_unverified.DataSource = data2.UnverifiedUsers();
+            UserDataAccess data3 = new UserDataAccess();
+            dataGridView_candidates.DataSource = data3.CandidatesList();
+            UserDataAccess data4 = new UserDataAccess();
+            dataGridView_candidates.DataSource = data3.CandidatesList();
+
+        }
+        private void frm_AdminDashboard_Load(object sender, EventArgs e)
+        {
+            RefreshDataGridView();
+        }
+
+        private void btn_verify_Click(object sender, EventArgs e)
+        {
+            AdminDataAccess adminDataAccess = new AdminDataAccess();
+            if (adminDataAccess.VerifyUser(Convert.ToInt32(txt_userid.Text)))
+            {
+                RefreshDataGridView();
+                MessageBox.Show("Verification Successful");
+            }
+            else
+            {
+                MessageBox.Show("Verify Error");
+            }
+        }
+
+        private void btn_remove_Click(object sender, EventArgs e)
+        {
+            AdminDataAccess adminDataAccess = new AdminDataAccess();
+            if (adminDataAccess.RemoveCandidate(Convert.ToInt32(txt_candidateid.Text)))
+            {
+                RefreshDataGridView();
+                MessageBox.Show("Successfully Removed!");
+            }
+            else
+            {
+                MessageBox.Show("Operation Unsuccessful!");
+            }
+
+        }
+
+        private void btn_voteresult_Click(object sender, EventArgs e)
+        {
+            new CastVote().Show();
+            this.Hide();
+        }
+
+        private void btn_del_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Are you Sure?", "Confirmation", MessageBoxButtons.YesNo);
+            AdminDataAccess admin=new AdminDataAccess();
+            if (admin.DeleteFakeUsers(Convert.ToInt32(txt_userid.Text)))
+            {
+                MessageBox.Show("Successfully Deleted!");
+            }
+            else
+            {
+                MessageBox.Show("Error!");
+            }
+
+        }
     }
 }

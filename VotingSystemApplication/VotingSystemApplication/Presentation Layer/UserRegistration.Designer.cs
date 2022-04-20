@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_UserRegistration));
             this.pnl_left = new System.Windows.Forms.Panel();
-            this.lbl_dp = new System.Windows.Forms.Label();
             this.lbl_backtologin = new System.Windows.Forms.Label();
             this.pictureBox_backtoogin = new System.Windows.Forms.PictureBox();
             this.pictureBox_dp = new System.Windows.Forms.PictureBox();
@@ -97,7 +96,6 @@
             // pnl_left
             // 
             this.pnl_left.BackColor = System.Drawing.Color.RoyalBlue;
-            this.pnl_left.Controls.Add(this.lbl_dp);
             this.pnl_left.Controls.Add(this.lbl_backtologin);
             this.pnl_left.Controls.Add(this.pictureBox_backtoogin);
             this.pnl_left.Controls.Add(this.pictureBox_dp);
@@ -105,18 +103,6 @@
             this.pnl_left.Name = "pnl_left";
             this.pnl_left.Size = new System.Drawing.Size(250, 674);
             this.pnl_left.TabIndex = 0;
-            // 
-            // lbl_dp
-            // 
-            this.lbl_dp.AutoSize = true;
-            this.lbl_dp.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_dp.ForeColor = System.Drawing.Color.White;
-            this.lbl_dp.Location = new System.Drawing.Point(85, 246);
-            this.lbl_dp.Name = "lbl_dp";
-            this.lbl_dp.Size = new System.Drawing.Size(91, 19);
-            this.lbl_dp.TabIndex = 44;
-            this.lbl_dp.Text = "Select File";
-            this.lbl_dp.Click += new System.EventHandler(this.lbl_dp_Click);
             // 
             // lbl_backtologin
             // 
@@ -142,7 +128,7 @@
             // 
             // pictureBox_dp
             // 
-            this.pictureBox_dp.Location = new System.Drawing.Point(31, 94);
+            this.pictureBox_dp.Location = new System.Drawing.Point(31, 255);
             this.pictureBox_dp.Name = "pictureBox_dp";
             this.pictureBox_dp.Size = new System.Drawing.Size(199, 140);
             this.pictureBox_dp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -277,7 +263,11 @@
             this.comboBox_division.Items.AddRange(new object[] {
             "Dhaka",
             "Chittagong",
-            "Rajshahi"});
+            "Rajshahi",
+            "Khulna",
+            "Barishal",
+            "Sylhet",
+            "Mymensingh"});
             this.comboBox_division.Location = new System.Drawing.Point(469, 390);
             this.comboBox_division.Name = "comboBox_division";
             this.comboBox_division.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -666,7 +656,6 @@
         private System.Windows.Forms.Panel pnl_left;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox grpBox_main;
-        private System.Windows.Forms.PictureBox pictureBox_dp;
         private System.Windows.Forms.PictureBox pictureBox_email;
         private System.Windows.Forms.PictureBox pictureBox_name2;
         private System.Windows.Forms.PictureBox pictureBox_name1;
@@ -705,6 +694,6 @@
         private System.Windows.Forms.Label lbl_backtologin;
         private System.Windows.Forms.PictureBox pictureBox_backtoogin;
         private System.Windows.Forms.PictureBox pictureBox_windowclosingReg;
-        private System.Windows.Forms.Label lbl_dp;
+        private System.Windows.Forms.PictureBox pictureBox_dp;
     }
 }

@@ -81,7 +81,7 @@ namespace VotingSystemApplication.Presentation_Layer
             if (user.EnableVote())
             {
                 //MessageBox.Show("Vote Option Enabled!");
-                frm_VotingDashboard vote=new frm_VotingDashboard();
+                Vote vote=new Vote();
                 vote.Show();
                 this.Hide();
             }
@@ -201,6 +201,19 @@ namespace VotingSystemApplication.Presentation_Layer
             }
         }
 
-        
+        private void lbl_candidatesreg_Click(object sender, EventArgs e)
+        {
+            txt_CandidateRegistration candidate = new txt_CandidateRegistration();
+            User user = new User();
+            user.UserId=lbl_userid.Text;
+            candidate.UserID(lbl_userid.Text);
+            candidate.Show();
+            this.Hide();
+        }
+
+        private void pnl_1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

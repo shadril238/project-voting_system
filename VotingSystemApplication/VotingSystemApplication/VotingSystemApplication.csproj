@@ -48,7 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data Access Layer\AdminDataAccess.cs" />
-    <Compile Include="Entities\Admin.cs" />
+    <Compile Include="Data Access Layer\IAdminOperations.cs" />
+    <Compile Include="Data Access Layer\IUserOperations.cs" />
     <Compile Include="Presentation Layer\AdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,10 +58,24 @@
     </Compile>
     <Compile Include="Data Access Layer\DataAccess.cs" />
     <Compile Include="Data Access Layer\UserDataAccess.cs" />
-    <Compile Include="Data Access Layer\UserRegistration.cs">
+    <Compile Include="Presentation Layer\CandidateRegistration.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Presentation Layer\CandidateRegistration.Designer.cs">
+      <DependentUpon>CandidateRegistration.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Presentation Layer\CastVote.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Data Access Layer\UserRegistration.Designer.cs">
+    <Compile Include="Presentation Layer\CastVote.Designer.cs">
+      <DependentUpon>CastVote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\UserRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\UserRegistration.Designer.cs">
       <DependentUpon>UserRegistration.cs</DependentUpon>
     </Compile>
     <Compile Include="Entities\Candidate.cs" />
@@ -83,18 +98,25 @@
     <Compile Include="Presentation Layer\UserDashboard.Designer.cs">
       <DependentUpon>UserDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation Layer\VotingDashboard.cs">
+    <Compile Include="Presentation Layer\Vote.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation Layer\VotingDashboard.Designer.cs">
-      <DependentUpon>VotingDashboard.cs</DependentUpon>
+    <Compile Include="Presentation Layer\Vote.Designer.cs">
+      <DependentUpon>Vote.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Presentation Layer\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Data Access Layer\UserRegistration.resx">
+    <EmbeddedResource Include="Presentation Layer\CandidateRegistration.resx">
+      <DependentUpon>CandidateRegistration.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\CastVote.resx">
+      <DependentUpon>CastVote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\UserRegistration.resx">
       <DependentUpon>UserRegistration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\CandidateDashboard.resx">
@@ -106,8 +128,8 @@
     <EmbeddedResource Include="Presentation Layer\UserDashboard.resx">
       <DependentUpon>UserDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation Layer\VotingDashboard.resx">
-      <DependentUpon>VotingDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation Layer\Vote.resx">
+      <DependentUpon>Vote.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

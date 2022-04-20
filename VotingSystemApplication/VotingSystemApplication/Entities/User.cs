@@ -25,5 +25,7 @@ namespace VotingSystemApplication.Entities
         public string UserDistrict { get; set; }
         public string UserDivision { get; set; }
         public string UserBloodGroup { get; set; }
+        public string isVerified { get; set; }
+        public string isCandidate { get; set; }
     }
 }

@@ -107,6 +107,7 @@
             this.pnl_1.Name = "pnl_1";
             this.pnl_1.Size = new System.Drawing.Size(798, 674);
             this.pnl_1.TabIndex = 0;
+            this.pnl_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_1_Paint);
             // 
             // pnl_updatedata
             // 
@@ -135,7 +136,7 @@
             this.pnl_updatedata.Controls.Add(this.label1);
             this.pnl_updatedata.Location = new System.Drawing.Point(33, 76);
             this.pnl_updatedata.Name = "pnl_updatedata";
-            this.pnl_updatedata.Size = new System.Drawing.Size(724, 556);
+            this.pnl_updatedata.Size = new System.Drawing.Size(724, 540);
             this.pnl_updatedata.TabIndex = 46;
             // 
             // btn_fathername
@@ -315,7 +316,6 @@
             this.dateTimePicker_updatedob.Name = "dateTimePicker_updatedob";
             this.dateTimePicker_updatedob.Size = new System.Drawing.Size(232, 22);
             this.dateTimePicker_updatedob.TabIndex = 53;
-            
             // 
             // txt_updatemother
             // 
@@ -415,7 +415,7 @@
             this.pnl_userdata.Controls.Add(this.lbl_userid);
             this.pnl_userdata.Location = new System.Drawing.Point(33, 73);
             this.pnl_userdata.Name = "pnl_userdata";
-            this.pnl_userdata.Size = new System.Drawing.Size(730, 559);
+            this.pnl_userdata.Size = new System.Drawing.Size(730, 543);
             this.pnl_userdata.TabIndex = 45;
             // 
             // lbl13
@@ -681,7 +681,7 @@
             // pictureBox_windowclosingReg
             // 
             this.pictureBox_windowclosingReg.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_windowclosingReg.Image")));
-            this.pictureBox_windowclosingReg.Location = new System.Drawing.Point(728, 3);
+            this.pictureBox_windowclosingReg.Location = new System.Drawing.Point(727, 6);
             this.pictureBox_windowclosingReg.Name = "pictureBox_windowclosingReg";
             this.pictureBox_windowclosingReg.Size = new System.Drawing.Size(57, 64);
             this.pictureBox_windowclosingReg.TabIndex = 44;

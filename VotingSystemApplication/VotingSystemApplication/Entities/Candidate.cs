@@ -10,5 +10,6 @@ namespace VotingSystemApplication.Entities
     {
         public string politicalParty { get; set; }
         public string candidateRoll { get; set; }
+        public int totalvotes { get; set; }    
     }
 }

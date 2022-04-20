@@ -32,9 +32,7 @@
             this.pnl_1 = new System.Windows.Forms.Panel();
             this.lbl_welcome = new System.Windows.Forms.Label();
             this.pictureBox_windowclosingReg = new System.Windows.Forms.PictureBox();
-            this.btn_enablevote = new System.Windows.Forms.Button();
             this.btn_voteresult = new System.Windows.Forms.Button();
-            this.btn_disablevote = new System.Windows.Forms.Button();
             this.lbl_1 = new System.Windows.Forms.Label();
             this.lbl_backtologin = new System.Windows.Forms.Label();
             this.pictureBox_backtologin = new System.Windows.Forms.PictureBox();
@@ -72,41 +70,21 @@
             this.pictureBox_windowclosingReg.TabIndex = 44;
             this.pictureBox_windowclosingReg.TabStop = false;
             // 
-            // btn_enablevote
-            // 
-            this.btn_enablevote.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_enablevote.Location = new System.Drawing.Point(44, 178);
-            this.btn_enablevote.Name = "btn_enablevote";
-            this.btn_enablevote.Size = new System.Drawing.Size(182, 79);
-            this.btn_enablevote.TabIndex = 49;
-            this.btn_enablevote.Text = "Enable Vote";
-            this.btn_enablevote.UseVisualStyleBackColor = true;
-            // 
             // btn_voteresult
             // 
             this.btn_voteresult.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_voteresult.Location = new System.Drawing.Point(44, 412);
+            this.btn_voteresult.Location = new System.Drawing.Point(44, 284);
             this.btn_voteresult.Name = "btn_voteresult";
             this.btn_voteresult.Size = new System.Drawing.Size(182, 81);
             this.btn_voteresult.TabIndex = 48;
             this.btn_voteresult.Text = "Show Vote Result";
             this.btn_voteresult.UseVisualStyleBackColor = true;
             // 
-            // btn_disablevote
-            // 
-            this.btn_disablevote.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_disablevote.Location = new System.Drawing.Point(44, 295);
-            this.btn_disablevote.Name = "btn_disablevote";
-            this.btn_disablevote.Size = new System.Drawing.Size(182, 79);
-            this.btn_disablevote.TabIndex = 47;
-            this.btn_disablevote.Text = "Disable Vote";
-            this.btn_disablevote.UseVisualStyleBackColor = true;
-            // 
             // lbl_1
             // 
             this.lbl_1.AutoSize = true;
             this.lbl_1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_1.Location = new System.Drawing.Point(-3, 24);
+            this.lbl_1.Location = new System.Drawing.Point(3, 32);
             this.lbl_1.Name = "lbl_1";
             this.lbl_1.Size = new System.Drawing.Size(261, 27);
             this.lbl_1.TabIndex = 50;
@@ -142,10 +120,8 @@
             this.Controls.Add(this.lbl_backtologin);
             this.Controls.Add(this.pictureBox_backtologin);
             this.Controls.Add(this.lbl_1);
-            this.Controls.Add(this.btn_enablevote);
             this.Controls.Add(this.btn_voteresult);
             this.Controls.Add(this.pnl_1);
-            this.Controls.Add(this.btn_disablevote);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_CandidateDashboard";
             this.Text = "CandidateDashboard";
@@ -163,9 +139,7 @@
         private System.Windows.Forms.Panel pnl_1;
         private System.Windows.Forms.Label lbl_welcome;
         private System.Windows.Forms.PictureBox pictureBox_windowclosingReg;
-        private System.Windows.Forms.Button btn_enablevote;
         private System.Windows.Forms.Button btn_voteresult;
-        private System.Windows.Forms.Button btn_disablevote;
         private System.Windows.Forms.Label lbl_1;
         private System.Windows.Forms.Label lbl_backtologin;
         private System.Windows.Forms.PictureBox pictureBox_backtologin;
