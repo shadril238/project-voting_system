@@ -94,26 +94,45 @@ namespace VotingSystemApplication.Presentation_Layer
             {
                 //All the backend mechanism for Register button
                 UserDataAccess user1=new UserDataAccess();
-                UserDataAccess user2 = new UserDataAccess();
-                if (Combo_role.Text=="USER" && user1.LoginUsers(txt_email.Text, txt_password.Text))
+                
+                if (Combo_role.Text=="USER"  )
                 {
-                    //user.Dispose();
-                   
-                    //MessageBox.Show("Dashboard Pending!");
-                    frm_UserDashboard dashboard=new frm_UserDashboard();
-                    user1.Dispose();
-                    //insert user data
-                    User user = new User();
-                    user = user2.UserData(txt_email.Text);
-                    //user.Dispose();
-                    
-                    dashboard.SetData(user);
-                    dashboard.Show();
-                    
-                    
-                    this.Hide();
-                    user1.Dispose();
-                    user2.Dispose();
+                    bool val=true;
+                    try
+                    {
+                        val = user1.LoginUsers(txt_email.Text, txt_password.Text);
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show("Welcome!");
+                    }
+                    finally
+                    {
+                        user1.Dispose();
+                    }
+                    if (val)
+                    {
+                        //user.Dispose();
+                        
+                        //MessageBox.Show("Dashboard Pending!");
+                        frm_UserDashboard dashboard = new frm_UserDashboard();
+                        
+                        //insert user data
+                        User user = new User();
+                        UserDataAccess user2 = new UserDataAccess();
+                        user = user2.UserData(txt_email.Text);
+                        //user.Dispose();
+
+                        dashboard.SetData(user);
+                        dashboard.Show();
+
+
+                        this.Hide();
+                        
+                        user2.Dispose();
+                        
+
+                    }
 
 
                 }
